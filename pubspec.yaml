@@ -78,7 +78,7 @@ flutter:
   fonts:
     - family: Gilroy-Bold
       fonts:
-        - asset: fonts/Gilroy-Bold.ttf
+        - asset: fonts\Gilroy\Gilroy-Bold.ttf
     - family: Inter-Normal
       fonts:
         - asset: fonts\Inter\static\Inter-Medium.ttf
