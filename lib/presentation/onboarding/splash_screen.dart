@@ -1,3 +1,4 @@
+import 'package:ch13_fintech_app/core/size_config.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -10,16 +11,25 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    SizeConfig.init(context);
+    return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'Welcome'
-        ),
+        title: Text('Welcome'),
       ),
-      body: Center(
-        child: Text(
-          'this is a test'
-        ),
+      body: Column(
+        children: [
+          Center(
+            child: Text('this is a test'),
+          ),
+          SizedBox(
+            height: getProportionateScreenHeight(200),
+          ),
+          Container(
+            height: getProportionateScreenHeight(100),
+            width: getProportionateScreenWidth(100),
+            color: Colors.green,
+          )
+        ],
       ),
     );
   }
