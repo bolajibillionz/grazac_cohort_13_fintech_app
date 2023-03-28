@@ -16,6 +16,11 @@ class _SplashScreenState extends State<SplashScreen> {
           'Welcome'
         ),
       ),
+      body: Center(
+        child: Text(
+          'this is a test'
+        ),
+      ),
     );
   }
 }
