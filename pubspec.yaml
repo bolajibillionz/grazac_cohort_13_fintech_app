@@ -82,6 +82,9 @@ flutter:
     - family: Inter-Normal
       fonts:
         - asset: fonts\Inter\static\Inter-Medium.ttf
+    - family: SF Pro Rounded
+      fonts:
+        - asset: fonts\SF Pro Rounded\SF-Pro-Rounded-Medium.otf
         
 
   #     fonts:
