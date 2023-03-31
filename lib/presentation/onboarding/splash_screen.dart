@@ -1,5 +1,9 @@
+import 'dart:async';
+
 import 'package:ch13_fintech_app/core/size_config.dart';
 import 'package:flutter/material.dart';
+
+import '../send_money.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -9,6 +13,17 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  @override
+void initState() {
+    super.initState();
+    Timer(
+        Duration(seconds: 5),
+        (() => 
+        Navigator.pushReplacement(context, MaterialPageRoute(builder:
+         (context)=>SendMoney()))
+            ));
+  }
+
   @override
   Widget build(BuildContext context) {
     SizeConfig.init(context);
