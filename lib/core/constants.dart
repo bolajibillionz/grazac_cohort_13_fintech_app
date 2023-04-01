@@ -7,11 +7,11 @@ class Palette {
   static const Color primaryContainerColor = Color(0xFFF5F6FA);
   static const Color primaryContainerColor2 = Color(0xFFD1D8F5);
   static const Color primaryTextColor1 = Color(0xFF151940);
-   static const Color primaryIconsColor1 = Color(0xFF2a2b32);
-   static const Color deviderColor = Color(0xFFd8def6);
-   static const Color usdColor = Color(0xFF7f8192);
+  static const Color primaryIconsColor1 = Color(0xFF2a2b32);
+  static const Color deviderColor = Color(0xFFd8def6);
+  static const Color usdColor = Color(0xFF7f8192);
+  static const Color textColor = Color(0xFF020000);
 }
-
 
 class FontFamily {
   static const String clashVariable = 'ClashDisplay-Variable';
