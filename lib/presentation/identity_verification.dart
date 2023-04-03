@@ -1,3 +1,4 @@
+import 'package:ch13_fintech_app/presentation/transaction.dart';
 import 'package:flutter/material.dart';
 
 import '../core/constants.dart';
@@ -18,7 +19,7 @@ class _IdentityState extends State<Identity> {
     return Scaffold(
         backgroundColor: Palette.primaryColor3,
         body: Padding(
-          padding: EdgeInsets.all(20.0),
+          padding: EdgeInsets.all(45.0),
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             SizedBox(
@@ -74,6 +75,7 @@ class _IdentityState extends State<Identity> {
               height: getProportionateScreenHeight(67),
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 BuildCustomButton(
                   onPressed: () {},
@@ -174,7 +176,7 @@ class _IdentityState extends State<Identity> {
             Center(
               child: SizedBox(
                 height: getProportionateScreenHeight(56),
-                width: getProportionateScreenWidth(332),
+                width: getProportionateScreenWidth(185),
                 child: ElevatedButton(
                     style: ButtonStyle(
                         backgroundColor: MaterialStateProperty.all(
@@ -187,7 +189,7 @@ class _IdentityState extends State<Identity> {
                         ))),
                     onPressed: (() {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext) => Identity()));
+                          builder: (BuildContext) => Transaction()));
                     }),
                     child: Text(
                       'Verify',

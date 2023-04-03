@@ -26,7 +26,7 @@ class _EditProfileState extends State<EditProfile> {
     return Scaffold(
       backgroundColor: Palette.primaryColor3,
       body: Padding(
-        padding: EdgeInsets.all(20.0),
+        padding: EdgeInsets.all(41.0),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           SizedBox(
             height: getProportionateScreenHeight(70),

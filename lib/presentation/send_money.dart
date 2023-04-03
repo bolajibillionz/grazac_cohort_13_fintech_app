@@ -23,7 +23,7 @@ class _SendMoneyState extends State<SendMoney> {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
-            padding: EdgeInsets.all(20.0),
+            padding: EdgeInsets.all(39.0),
             child: Column(
               children: [
                 SizedBox(

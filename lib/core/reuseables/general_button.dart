@@ -87,3 +87,77 @@ class BuildCustomButton extends StatelessWidget {
     );
   }
 }
+
+class GeneralButton1 extends StatelessWidget {
+  GeneralButton1({
+    super.key,
+    required this.buttonText,
+    required this.containerHeight,
+    required this.containerWidth,
+    required this.borderRadiusSize,
+    required this.buttonTextSize,
+    required this.buttonTextColor,
+    required this.buttonColor,
+    required this.borderColor,
+    required this.buttonTextWeight,
+    required this.buttonTextFamily,
+  });
+
+  String buttonText;
+  double containerHeight;
+  double containerWidth;
+  double borderRadiusSize;
+  double buttonTextSize;
+  Color buttonTextColor;
+  Color buttonColor;
+  Color borderColor;
+  FontWeight buttonTextWeight;
+  String buttonTextFamily;
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: getProportionateScreenHeight(containerHeight),
+      width: getProportionateScreenWidth(containerWidth),
+      child: Text(
+        buttonText,
+        style: TextStyle(
+          color: buttonTextColor,
+          fontSize: getProportionateScreenWidth(buttonTextSize),
+          fontWeight: buttonTextWeight,
+          fontFamily: buttonTextFamily,
+        ),
+      ),
+    );
+  }
+}
+
+class BuildCustomButton1 extends StatelessWidget {
+  BuildCustomButton1(
+      {required this.containerHeight,
+      required this.containerWidth,
+      required this.borderRadiusSize,
+      required this.buttonColor,
+      this.borderColor,
+      required this.buttonChild});
+
+  void Function()? onPressed;
+  Widget buttonChild;
+  double containerHeight;
+  double containerWidth;
+  double borderRadiusSize;
+  Color buttonColor;
+  Color? borderColor;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: getProportionateScreenHeight(containerHeight),
+      width: getProportionateScreenWidth(containerWidth),
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(borderRadiusSize),
+          color: buttonColor),
+      child: Center(child: buttonChild),
+    );
+  }
+}
