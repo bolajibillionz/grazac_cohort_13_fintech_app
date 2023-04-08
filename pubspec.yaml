@@ -36,6 +36,9 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   device_preview: ^1.1.0
+  fl_chart: ^0.61.0
+  flutter_credit_card: ^3.0.6
+  flip_card: ^0.7.0
 
 dev_dependencies:
   flutter_test:
@@ -82,6 +85,9 @@ flutter:
     - family: Inter-Normal
       fonts:
         - asset: fonts\Inter\static\Inter-Medium.ttf
+    - family: NotoSerif-Bold
+      fonts:
+        - asset: fonts\Noto\NotoSerif-Bold.ttf
         
 
   #     fonts:
