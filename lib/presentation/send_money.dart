@@ -159,60 +159,88 @@ class _SendMoneyState extends State<SendMoney> {
                 SizedBox(
                   height: getProportionateScreenHeight(17),
                 ),
-                BuildCustomButton(
-                    onPressed: () {},
-                    containerHeight: 136,
-                    containerWidth: 332,
-                    borderRadiusSize: 10,
-                    buttonColor: Palette.primaryContainerColor,
-                    buttonChild: Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        createGeneralText(
-                            inputText: 'Send to',
-                            fontSize: 16,
-                            family: FontFamily.clashVariable2,
-                            weight: FontWeight.w600,
-                            colorName: Palette.primaryTextColor1),
-                        SizedBox(
-                          height: getProportionateScreenHeight(8),
-                        ),
-                        // ListView(
-                        //   children: [
-                        //     Row(
-                        //       children: [
-                        //         Image.asset(
-                        //           'images/Rectangle 38.png',
-                        //           height: getProportionateScreenHeight(54),
-                        //           width: getProportionateScreenWidth(54),
-                        //         ),
-                        //         Image.asset(
-                        //           'images/Rectangle 37.png',
-                        //           height: getProportionateScreenHeight(54),
-                        //           width: getProportionateScreenWidth(54),
-                        //         ),
-                        //         Image.asset(
-                        //           'images/Rectangle 36.png',
-                        //           height: getProportionateScreenHeight(54),
-                        //           width: getProportionateScreenWidth(54),
-                        //         ),
-                        //         Image.asset(
-                        //           'images/Rectangle 34.png',
-                        //           height: getProportionateScreenHeight(54),
-                        //           width: getProportionateScreenWidth(54),
-                        //         ),
-                        //         Image.asset(
-                        //           'images/Rectangle 39.png',
-                        //           height: getProportionateScreenHeight(54),
-                        //           width: getProportionateScreenWidth(54),
-                        //         ),
-                        //       ],
-                        //     ),
-                        //   ],
-                        //   scrollDirection: Axis.horizontal,
-                        // ),
-                      ],
-                    )),
+
+                createGeneralText(
+                    inputText: 'Send to',
+                    fontSize: 16,
+                    family: FontFamily.clashVariable2,
+                    weight: FontWeight.w600,
+                    colorName: Palette.primaryTextColor1),
+                SizedBox(
+                  height: getProportionateScreenHeight(8),
+                ),
+                SingleChildScrollView(
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      Image.asset(
+                        'images/Rectangle 38',
+                        height: getProportionateScreenHeight(54),
+                        width: getProportionateScreenWidth(54),
+                      ),
+                      SizedBox(
+                        width: getProportionateScreenWidth(19),
+                      ),
+                      Image.asset(
+                        'images/Rectangle 37',
+                        height: getProportionateScreenHeight(54),
+                        width: getProportionateScreenWidth(54),
+                      ),
+                      SizedBox(
+                        width: getProportionateScreenWidth(19),
+                      ),
+                      Image.asset(
+                        'images/Rectangle 36',
+                        height: getProportionateScreenHeight(54),
+                        width: getProportionateScreenWidth(54),
+                      ),
+                      SizedBox(
+                        width: getProportionateScreenWidth(19),
+                      ),
+                      Image.asset(
+                        'images/Rectangle 35',
+                        height: getProportionateScreenHeight(54),
+                        width: getProportionateScreenWidth(54),
+                      ),
+                      SizedBox(
+                        width: getProportionateScreenWidth(19),
+                      ),
+                      Image.asset(
+                        'images/Rectangle 59',
+                        height: getProportionateScreenHeight(54),
+                        width: getProportionateScreenWidth(54),
+                      ),
+                      SizedBox(
+                        width: getProportionateScreenWidth(19),
+                      ),
+                    ],
+                  ),
+                ),
+                // Container(
+                //   height: getProportionateScreenHeight(54),
+                //   width: getProportionateScreenWidth(54),
+                // Container(
+                //   height: getProportionateScreenHeight(54),
+                //   width: getProportionateScreenWidth(54),
+                //   child: ListView.builder(
+                //       scrollDirection: Axis.horizontal,
+                //       padding: EdgeInsets.all(16),
+                //       itemCount: 5,
+                //       itemBuilder: (context, index) {
+                //         return ListTile(
+                //           title: Row(
+                //             children: [
+                //               Image.asset('images/Rectangle 38.png'),
+                //               Image.asset('images/Rectangle 37.png'),
+                //               Image.asset('images/Rectangle 36.png'),
+                //               Image.asset('images/Rectangle 34.png'),
+                //               Image.asset('images/Rectangle 59.png'),
+                //             ],
+                //           ),
+                //         );
+                //       }),
+                // ),
+
                 SizedBox(
                   height: getProportionateScreenHeight(26),
                 ),
@@ -317,5 +345,15 @@ class _SendMoneyState extends State<SendMoney> {
         ),
       ),
     );
+    // Widget buildCard() => Container(
+    //       width: getProportionateScreenWidth(332),
+    //       height: getProportionateScreenHeight(136),
+    //       color: Palette.primaryContainerColor,
+    //       child: Row(
+    //         children: [
+    //           Image.asset('images/Rectangle39'),
+    //         ],
+    //       ),
+    //     );
   }
 }

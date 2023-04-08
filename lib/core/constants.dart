@@ -11,7 +11,8 @@ class Palette {
   static const Color deviderColor = Color(0xFFd8def6);
   static const Color usdColor = Color(0xFF7f8192);
   static const Color textColor = Color(0xFF020000);
-   static const Color textColor2 = Color(0xFF314bce);
+  static const Color textColor2 = Color(0xFF314bce);
+  static const Color Container3Color = Color(0xFF7A7AFD);
 }
 
 class FontFamily {

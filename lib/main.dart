@@ -1,5 +1,8 @@
+import 'package:ch13_fintech_app/presentation/bank.dart';
 import 'package:ch13_fintech_app/presentation/onboarding/splash_screen.dart';
 import 'package:ch13_fintech_app/presentation/send_money.dart';
+import 'package:ch13_fintech_app/presentation/side_manu.dart';
+import 'package:ch13_fintech_app/presentation/transaction.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const SendMoney(),
+      home: Transaction(),
     );
   }
 }
